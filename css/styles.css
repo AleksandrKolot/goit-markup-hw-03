@@ -1,4 +1,5 @@
 
+
 /* index */
 :root {
   --primary-text-color: #757575;
@@ -15,7 +16,12 @@
   --footer-text-color: rgba(255, 255, 255, 0.6);
   --copyright-text-color: rgba(255, 255, 255, 0.4);
 }
-/* *{box-sizing: border-box;} */
+html {
+  box-sizing: border-box;
+}
+
+/* *,*::before,*::after { box-sizing: inherit;} */
+
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
@@ -30,9 +36,21 @@ a{
 h1, h2, h3, h4, h5, h6{
   color: var(--title-text-color);
   font-weight: 700;
+  margin-top: 0;
 }
+
 .list{
   list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 2px solid green;
 }
 .nav {
   color: var(--title-text-color);
@@ -40,6 +58,12 @@ h1, h2, h3, h4, h5, h6{
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em; 
+}
+.main-nav{
+  display: flex;
+}
+.main-nav .item:not(:last-child) {
+  margin-right: 50px;
 }
 .accent, .nav:focus, 
 .nav:hover {
@@ -67,31 +91,63 @@ h1, h2, h3, h4, h5, h6{
   color: var(--accent-color);
 }
 /* main */
-/* .hero{}  заменить цвет текста на белый */
+/*   заменить цвет текста на белый */
+.hero{
+  text-align: center;
+  margin-bottom: 94px;
+}
 .hero-title{
+  width: 646px;
+  margin-bottom: 46px;
+  margin-left: auto;
+  margin-right: auto;
+
   font-weight: 900;
   font-size: 44px;
   /* добавить цвет */
   line-height: 1.36;
-  text-align: center;
+  
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 .button {
+  display: inline-block;
+  min-width: 200px;
+  border-radius: 4px;
+  padding: 10px 32px;
+
+  border: 1px solid transparent;
   font-family: Roboto, sans-serif;
   font-weight: 700;
   font-size: 16px;
   color: var(--hero-text-color);
   background-color: var(--accent-color);
   line-height: 1.9;
-  text-align: center;
+  
   letter-spacing: 0.06em;
 }
+
 /* .advantages {} */
+.link {
+  display: inline-block;
+  width: 278px;
+  margin-bottom: 30px;
+
+}
+.text{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.advantages-title{
+  margin-bottom: 10px;
+}
 .advantages-title, .work-title{
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+}
+.title-secondary {
+  margin-bottom: 50px;
 }
 .work-main-title, .team-main-title,
 .clients-main-title{
