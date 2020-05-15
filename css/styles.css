@@ -1,0 +1,183 @@
+
+/* index */
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196F3;
+  --primary-bg-color: #ffffff;
+  --header-logo-color: #000000;
+  --hero-text-color:#ffffff;
+  --work-title-text-color:#ffffff;
+  --team-bg-color:#F5F4FA;
+  --footer-logo-color:#ffffff;
+  --footer-bg-color:#2F303A;
+  --primary-footer-text-color:#ffffff;
+  --footer-text-color: rgba(255, 255, 255, 0.6);
+  --copyright-text-color: rgba(255, 255, 255, 0.4);
+}
+/* *{box-sizing: border-box;} */
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--primary-text-color);
+  background-color: var(--primary-bg-color);
+  letter-spacing: 0.03em;
+}
+a{
+  text-decoration:none;
+}
+h1, h2, h3, h4, h5, h6{
+  color: var(--title-text-color);
+  font-weight: 700;
+}
+.list{
+  list-style: none;
+}
+.nav {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em; 
+}
+.accent, .nav:focus, 
+.nav:hover {
+  color: var(--accent-color)
+}
+.logo {
+  font-family: Raleway, sans-serif;;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--accent-color)
+}
+.studio-logo {
+  color:var(--header-logo-color);
+}
+.mail, .phone{
+  font-weight: 500;
+  color: var(--primary-text-color);
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  
+}
+.mail:hover, .mail:focus,
+.phone:hover, .phone:focus {
+  color: var(--accent-color);
+}
+/* main */
+/* .hero{}  заменить цвет текста на белый */
+.hero-title{
+  font-weight: 900;
+  font-size: 44px;
+  /* добавить цвет */
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.button {
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--hero-text-color);
+  background-color: var(--accent-color);
+  line-height: 1.9;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+/* .advantages {} */
+.advantages-title, .work-title{
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.work-main-title, .team-main-title,
+.clients-main-title{
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+.work-title {
+/* добавить цвет */
+  /* color: var(--work-title-text-color); */
+}
+.team{
+  background-color: var(--team-bg-color);
+}
+.team-title{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+.profession {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+/* footer */
+.footer{
+  background-color: var(--footer-bg-color);
+}
+.footer .logo{
+  font-size: 22px;
+  line-height: 1.18;
+}
+.footer .studio-logo{
+  color: var(--footer-logo-color);
+}
+.footer .address{
+  color: var(--primary-footer-text-color);
+  font-style: normal;
+}
+.footer .mail,
+.footer .phone{
+  font-weight: 400;
+  color: var(--footer-text-color);
+  line-height: 1.71;
+  letter-spacing: 0.03em
+}
+.appeal{
+  color: var(--primary-footer-text-color);
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.copyright {
+  color: var(--copyright-text-color);
+  font-size: 12px;
+  line-height: 2;
+  text-align: center;
+}
+/* portfolio */
+.button-portfolio {
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  color: var(--title-text-color)
+}
+.button-portfolio:focus, 
+.button-portfolio:hover,
+.description {
+  background-color: var(--accent-color);
+  color: var(--primary-bg-color);
+}
+.portfolio-title {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.category {
+  font-size: 16px;
+  line-height: 1.9;
+}
+.description {
+  font-size: 18px;
+  line-height: 1.56;
+  }
+  /* оформить ccылки с лого после урока по svg */
