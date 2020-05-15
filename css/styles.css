@@ -38,12 +38,12 @@ h1, h2, h3, h4, h5, h6{
   font-weight: 700;
   margin-top: 0;
 }
-
 .list{
+  
   list-style: none;
   margin: 0;
-  padding: 0;
-}
+  padding: 0;}
+
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -53,23 +53,43 @@ h1, h2, h3, h4, h5, h6{
   outline: 2px solid green;
 }
 .nav {
+  display: block;
+  padding: 32px 0px;
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em; 
 }
+.list-nav{
+  display: flex;
+  margin-left: 80px;
+}
+.list-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+.contacts {
+  display: flex;
+  margin-left: auto;
+}
+.contacts .item:not(:last-child) {
+  margin-right: 30px;
+}
 .main-nav{
   display: flex;
+  align-items: center;
 }
-.main-nav .item:not(:last-child) {
-  margin-right: 50px;
+.box-nav{
+  display: flex;
+  align-items: center;
 }
 .accent, .nav:focus, 
 .nav:hover {
   color: var(--accent-color)
 }
+
 .logo {
+  
   font-family: Raleway, sans-serif;;
   font-weight: 700;
   font-size: 26px;
@@ -128,9 +148,8 @@ h1, h2, h3, h4, h5, h6{
 }
 
 /* .advantages {} */
-.link {
+.advantages .link {
   display: inline-block;
-  width: 278px;
   margin-bottom: 30px;
 
 }
