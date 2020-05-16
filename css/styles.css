@@ -197,6 +197,10 @@ width:calc((100%-90px)/4);
   }
 .team{
   background-color: var(--team-bg-color);
+  /* margin-bottom: 94px; */
+}
+.team-heading {
+  padding-top: 94px;
 }
 .team-title{
   margin-bottom: 10px;
@@ -205,13 +209,21 @@ width:calc((100%-90px)/4);
   line-height: 1.19;
   text-align: center;
 }
+.profession {
+  margin-bottom: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+} 
 .list-team {
   display: flex;
+  padding-bottom: 94px;
   }
-  .list-team .item {
+.list-team .item {
   width:calc((100%-90px)/4);
   }
-  .list-team .item:not(:last-child) {
+.list-team .item:not(:last-child) {
     margin-right: 30px;
   }
   .public {
@@ -220,22 +232,32 @@ width:calc((100%-90px)/4);
     margin-right: auto;
     width: 207px;
   }
-  /* удалить цвет, вставить svg*/
+  /* удалить размер и цвет, вставить svg*/
   .public .item {
     width: 44px;
+    height: 44px;
     background-color:var(--accent-color);
   }
-  .list-team .item:not(:last-child) {
-      margin-right: 10px;
+  .public .item:not(:last-child) {
+    margin-right: 10px;
   }
-.profession {
-  margin-bottom: 16px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.19;
-  text-align: center;
-} 
-
+  .clients-heading {
+    padding-top: 94px;
+  }
+  .list-clients {
+    display: flex;
+    padding-bottom: 94px;
+    }
+    /* удалить размеры после урока по svg */
+    .list-clients .item {
+    width:calc((100%-150px)/6);
+    height: 90px;
+    text-align: center;
+    background-color: grey;
+    }
+    .list-clients .item:not(:last-child) {
+      margin-right: 30px;
+    }
 /* footer */
 .footer{
   background-color: var(--footer-bg-color);
