@@ -10,28 +10,30 @@
 </head>
 <body>
   <header class="header-bar">
-    <nav>
-      <a href="./index.html" class="logo">Web <span class="studio-logo">Studio</span></a>
-      <ul class="list">
-        <li><a href="./index.html" class="nav">Студия</a></li>
-        <li><a href="./portfolio.html" class="accent nav">Портфолио</a></li>
-        <li><a href="" class="nav">Контакты</a></li>
+    <div class="container box-nav">
+      <nav class="main-nav">
+        <a href="./index.html" class="logo main-nav">Web <span class="studio-logo">Studio</span></a>
+        <ul class="list-nav list">
+          <li class="item"><a href="./index.html" class="nav">Студия</a></li>
+          <li class="item"><a href="./portfolio.html" class="accent nav">Портфолио</a></li>
+          <li class="item"><a href="" class="nav">Контакты</a></li>
+        </ul>
+      </nav>
+      <ul class="contacts list">
+          <li class="item">
+            <a href="mailto:info@devstudio.com" class="mail">
+            <img src="./image/envelope.svg" alt="envelope">
+            info@devstudio.com
+            </a>
+          </li>
+          <li class="item">
+            <a href="tel:+380961111111" class="phone">
+            <img src="./image/tel.svg" alt="telephone">
+            +38 096 111 11 11
+            </a>
+          </li>
       </ul>
-    </nav>
-      <ul class="list">
-        <li>
-          <a href="mailto:info@devstudio.com" class="mail">
-          <img src="./image/envelope.svg" alt="envelope">
-          info@devstudio.com
-          </a>
-        </li>
-        <li>
-          <a href="tel:+380961111111" class="phone">
-          <img src="./image/tel.svg" alt="telephone">
-          +38 096 111 11 11
-          </a>
-        </li>
-      </ul>
+    </div>
   </header>
   <main>
   <!-- секция портфолио -->
@@ -44,7 +46,7 @@
     </ul>
     <ul class="list-portfolio list">
       <li class="item">
-        <img src="./image/techno.jpg" alt="профили трех сотрудников на мониторе ноутбука">
+        <img class="img-portfolio" src="./image/techno.jpg" alt="профили трех сотрудников на мониторе ноутбука">
         <h2 class="portfolio-title">Технокряк</h2>
         <p class="category">Веб-сайт</p>
         <p class="description text">Технокряк это современная площадка распространения коронавируса.
@@ -52,7 +54,7 @@
           на защищённые сервера конкурентов.</p>
       </li>
       <li class="item">
-        <img src="./image/poster-new.jpg" alt="два баскетбоиста">
+        <img class="img-portfolio" src="./image/poster-new.jpg" alt="два баскетбоиста">
         <h2 class="portfolio-title">Постер New Orlean vs Golden Stars</h2>
         <p class="category">Дизайн</p>
         <p class="description text">Технокряк это современная площадка распространения коронавируса.
@@ -60,7 +62,7 @@
           на защищённые сервера конкурентов.</p>
       </li>
       <li class="item">
-        <img src="./image/seafood.jpg" alt="логотип ресторана">
+        <img class="img-portfolio" src="./image/seafood.jpg" alt="логотип ресторана">
         <h2 class="portfolio-title">Ресторан Seafood</h2>
         <p class="category">Приложение</p>
         <p class="description text">Технокряк это современная площадка распространения коронавируса.
@@ -68,7 +70,7 @@
           на защищённые сервера конкурентов.</p>
       </li>
       <li class="item">
-        <img src="./image/prime.jpg" alt="наушники">
+        <img class="img-portfolio" src="./image/prime.jpg" alt="наушники">
         <h2 class="portfolio-title">Проект Prime</h2>
         <p class="category">Маркетинг</p>
         <p class="description text">Технокряк это современная площадка распространения коронавируса.
@@ -76,7 +78,7 @@
           на защищённые сервера конкурентов.</p>
       </li>
       <li class="item">
-        <img src="./image/boxes.jpg" alt="две коробки">
+        <img class="img-portfolio" src="./image/boxes.jpg" alt="две коробки">
         <h2 class="portfolio-title">Проект Boxes</h2>
         <p class="category">Приложение</p>
         <p class="description text">Технокряк это современная площадка распространения коронавируса.
@@ -84,7 +86,7 @@
           на защищённые сервера конкурентов.</p>
       </li>
       <li class="item">
-        <img src="./image/inspiration.jpg" alt="монитор компьютера">
+        <img class="img-portfolio" src="./image/inspiration.jpg" alt="монитор компьютера">
         <h2 class="portfolio-title">Inspiration has no Borders</h2>
         <p class="category">Веб-сайт</p>
         <p class="description text">Технокряк это современная площадка распространения коронавируса.
@@ -92,7 +94,7 @@
           на защищённые сервера конкурентов.</p>
       </li>
       <li class="item">
-        <img src="./image/LE.jpg" alt="журнал глянцевый">
+        <img class="img-portfolio" src="./image/LE.jpg" alt="журнал глянцевый">
         <h2 class="portfolio-title">Издание Limited Edition</h2>
         <p class="category">Дизайн</p>
         <p class="description text">Технокряк это современная площадка распространения коронавируса.
@@ -100,7 +102,7 @@
           на защищённые сервера конкурентов.</p>
       </li>
       <li class="item">
-        <img src="./image/lab.jpg" alt="ярлык бумажный">
+        <img class="img-portfolio" src="./image/lab.jpg" alt="ярлык бумажный">
         <h2 class="portfolio-title">Проект LAB</h2>
         <p class="category">Маркетинг</p>
         <p class="description text">Технокряк это современная площадка распространения коронавируса.
@@ -108,7 +110,7 @@
           на защищённые сервера конкурентов.</p>
       </li>
       <li class="item">
-      <img src="./image/Growing-Business.jpg" alt="ноутбук">
+      <img class="img-portfolio" src="./image/Growing-Business.jpg" alt="ноутбук">
       <h2 class="portfolio-title">Growing Business</h2>
       <p class="category">Приложение</p>
       <p class="description text">Технокряк это современная площадка распространения коронавируса.
@@ -118,24 +120,30 @@
     </ul>
     </section>
   </main>
+  <!-- footer -->
   <footer class="footer">
-    <div>
-    <a href="./index.html" class="logo">Web <span class="studio-logo">Studio</span></a>
-    <address class="address">г. Киев, пр-т Леси Украинки, 26 <br>
-    <a href="mailto:info@example.com" class="mail">info@example.com</a> <br>
-    <a href="tel:+380991111111" class="phone">+38 099 111 11 11</a>
-    </address>
+    <div class="container">
+      <div class="content">
+        <div class="box-address">
+          <a href="./index.html" class="logo">Web <span class="studio-logo">Studio</span></a>
+          <address class="address">г. Киев, пр-т Леси Украинки, 26 <br>
+          <a href="mailto:info@example.com" class="mail">info@example.com</a> <br>
+          <a href="tel:+380991111111" class="phone">+38 099 111 11 11</a>
+          </address>
+        </div>
+
+        <div class="box-appeal">
+          <p class="appeal text">присоединяйтесь</p>
+          <ul class="public list">
+            <li class="item"><a href="" aria-label="Ccылка на Инстаграм"></a></li>
+            <li class="item"><a href="" aria-label="Ccылка на Твиттер"></a></li>
+            <li class="item"><a href="" aria-label="Ccылка на Фейсбук"></a></li>
+            <li class="item"><a href="" aria-label="Ccылка на Линкедин"></a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="copyright text">2020 | Developed by GoIT Students</p>
     </div>
-    <div>
-      <p class="appeal">присоединяйтесь</p>
-      <ul class="list">
-        <li><a href="" aria-label="Ccылка на Инстаграм">Инстаграм</a></li>
-        <li><a href="" aria-label="Ccылка на Твиттер">Твиттер</a></li>
-        <li><a href="" aria-label="Ccылка на Фейсбук">Фейсбук</a></li>
-        <li><a href="" aria-label="Ccылка на Линкедин">Линкедин</a></li>
-      </ul>
-    </div>
-    <p class="copyright">2020 | Developed by GoIT Students</p>
   </footer>
 </body>
 </html>
