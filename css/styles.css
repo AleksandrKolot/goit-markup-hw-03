@@ -53,7 +53,11 @@ h1, h2, h3, h4, h5, h6{
   width: 1230px;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid green;
+  /* outline: 2px solid green; */
+}
+/* header */
+.header-bar {
+  border: 2px solid #ECECEC;
 }
 .nav {
   display: block;
@@ -111,14 +115,10 @@ h1, h2, h3, h4, h5, h6{
   color: var(--accent-color);
 }
 /* main */
-/*   заменить цвет текста заголовков на белый */
+/*   заменить цвет текста заголовков на белый
+сделать фон */
 .hero{
   text-align: center;
-}
-
-.box-section, .advantages,
-.work {
-margin-bottom: 94px;
 }
 .hero-title {
   width: 646px;
@@ -136,7 +136,7 @@ margin-bottom: 94px;
 }
 .button {
   display: inline-block;
-  min-width: 200px;
+  width: auto;
   border-radius: 4px;
   padding: 10px 32px;
 
@@ -153,6 +153,10 @@ margin-bottom: 94px;
 
 /* .advantages {} */
 /* добавил фон для катринок svg */
+.box-section, .advantages,
+.work {
+margin-bottom: 94px;
+}
  .link {
   display: block;
   margin-bottom: 30px;
@@ -273,29 +277,32 @@ width:calc((100%-90px)/4);
 .list-clients .item:not(:last-child) {
  margin-right: 30px;
 }
+
 /* footer */
 .footer{
   background-color: var(--footer-bg-color);
 }
+.box-address {
+  width: 231px;
+}
 .footer .logo{
   font-size: 22px;
   line-height: 1.18;
-  margin-bottom: 10px;
 }
 .footer .studio-logo{
   color: var(--footer-logo-color);
 }
 .footer .address{
+  /* display: block; */
+  padding-top: 10px;
   color: var(--primary-footer-text-color);
   font-style: normal;
 }
 .footer .mail,
 .footer .phone{
-  margin-top: 9px;
+  display: inline-block;
+  padding-top: 9px;
   color: var(--footer-text-color);
-}
-.box-address {
-  width: 231px;
 }
 .appeal{
   margin-bottom: 21px;
@@ -322,6 +329,9 @@ width:calc((100%-90px)/4);
   font-size: 12px;
   line-height: 2;
   text-align: center;
+  white-space: nowrap;
+  overflow: auto;
+  text-overflow: ellipsis;
 }
 
 /* portfolio */
