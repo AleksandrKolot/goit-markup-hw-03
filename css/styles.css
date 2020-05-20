@@ -35,7 +35,7 @@ a{
 }
 h1, h2, h3, h4, h5, h6{
   color: var(--title-text-color);
-  font-weight: 700;
+  /* font-weight: 700; */
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -48,12 +48,12 @@ h1, h2, h3, h4, h5, h6{
   padding: 0px;
 }
 .container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1230px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  /* outline: 2px solid green; */
+  margin-left: auto;
+  margin-right: auto;
+  outline: 2px solid green;
 }
 /* header */
 .header-bar {
@@ -70,7 +70,7 @@ h1, h2, h3, h4, h5, h6{
 }
 .list-nav{
   display: flex;
-  margin-left: 80px;
+  margin-left: 85px;
 }
 .list-nav .item:not(:last-child) {
   margin-right: 50px;
@@ -86,7 +86,7 @@ h1, h2, h3, h4, h5, h6{
   display: flex;
   align-items: center;
 }
-.box-nav{
+.header-bar .container{
   display: flex;
   align-items: center;
 }
@@ -115,14 +115,16 @@ h1, h2, h3, h4, h5, h6{
   color: var(--accent-color);
 }
 /* main */
+/* Hero */
 /*   заменить цвет текста заголовков на белый
 сделать фон */
-.hero{
+
+.hero {
   text-align: center;
 }
 .hero-title {
   width: 646px;
-  margin-bottom: 46px;
+  margin-bottom: 38px;
   margin-left: auto;
   margin-right: auto;
 
@@ -151,16 +153,34 @@ h1, h2, h3, h4, h5, h6{
   letter-spacing: 0.06em;
 }
 
-/* .advantages {} */
-/* добавил фон для катринок svg */
-.box-section, .advantages,
-.work {
-margin-bottom: 94px;
+/* Утилита отступ между секциями */
+.indent {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
- .link {
+/* утилита на h2 */
+.main-title {
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  margin-bottom: 50px;
+}
+/* утилита на h3 */
+.direct-title {
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+/* секция наши преимущества */
+.advantages .container{
+  border-bottom: 1px solid #ECECEC;
+}
+/* добавил фон для катринок svg/, удалить после урока */
+.advantages .link {
   display: block;
   margin-bottom: 30px;
-  width: 278px;
+  width: 270px;
   height: 120px;
   background-color: grey;
   border-radius: 4px;
@@ -169,7 +189,7 @@ margin-bottom: 94px;
 display: flex;
 }
 .list-advantages .item {
-width:calc((100%-90px)/4);
+width:calc((100% - 90px) / 4);
 }
 .list-advantages .item:not(:last-child) {
   margin-right: 30px;
@@ -177,17 +197,8 @@ width:calc((100%-90px)/4);
 .advantages-title {
   margin-bottom: 10px;
 }
-.advantages-title, .work-title {
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
-}
-.main-title {
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  margin-bottom: 50px;
-}
+
+/* секция чем мы занимаемся */
 .work-title {
   text-align: center;
 /* добавить цвет */
@@ -197,19 +208,17 @@ width:calc((100%-90px)/4);
   display: flex;
   }
   .list-work .item {
-  width:calc((100% - 60px)/3);
+  width:calc((100% - 60px) / 3);
   }
   .list-work .item:not(:last-child) {
     margin-right: 30px;
   }
-  /* Наша команда */
-.team{
+
+  /* секция наша команда */
+.team {
   background-color: var(--team-bg-color);
-  /* margin-bottom: 94px; */
 }
-.team-heading {
-  padding-top: 94px;
-}
+
 .team-title{
   margin-bottom: 10px;
   font-weight: 500;
@@ -217,10 +226,8 @@ width:calc((100%-90px)/4);
   line-height: 1.19;
   text-align: center;
 }
-.team-imagin {
+.team-image {
   display: block;
-  width: 278px;
-  height: 260px;
   margin-bottom: 30px;
 }
 .profession {
@@ -232,10 +239,9 @@ width:calc((100%-90px)/4);
 } 
 .list-team {
   display: flex;
-  padding-bottom: 94px;
 }
 .list-team .item {
-  width:calc((100% - 90px)/4);
+  width:calc((100% - 90px) / 4);
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 
   0px 1px 1px rgba(0, 0, 0, 0.14), 
   0px 1px 3px rgba(0, 0, 0, 0.12);
@@ -246,9 +252,7 @@ width:calc((100%-90px)/4);
 }
 .public {
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  width: 207px;
+  justify-content: center;
   margin-bottom: 24px;
 }
   /* удалить размер и цвет, вставить svg*/
@@ -260,16 +264,14 @@ width:calc((100%-90px)/4);
 .public .item:not(:last-child) {
  margin-right: 10px;
 }
-.clients-heading {
-  padding-top: 94px;
-}
+
+/* секция постоянные клиенты */
 .list-clients {
   display: flex;
-  padding-bottom: 94px;
 }
  /* удалить размеры после урока по svg */
 .list-clients .item {
-  width:calc((100% - 150px)/6);
+  width:calc((100% - 150px) / 6);
   height: 90px;
   text-align: center;
   background-color: grey;
@@ -285,26 +287,28 @@ width:calc((100%-90px)/4);
 .box-address {
   width: 231px;
 }
-.footer .logo{
+.footer .logo {
+  display: block;
   font-size: 22px;
   line-height: 1.18;
+  margin-bottom: 10px;
 }
-.footer .studio-logo{
+.footer .studio-logo {
   color: var(--footer-logo-color);
 }
-.footer .address{
-  /* display: block; */
-  padding-top: 10px;
+.footer .address {
+  display: flex;
+  flex-direction: column;
   color: var(--primary-footer-text-color);
   font-style: normal;
 }
 .footer .mail,
-.footer .phone{
+.footer .phone {
   display: inline-block;
-  padding-top: 9px;
+  margin-top: 9px;
   color: var(--footer-text-color);
 }
-.appeal{
+.appeal {
   margin-bottom: 21px;
   color: var(--primary-footer-text-color);
   font-weight: 700;
@@ -312,10 +316,9 @@ width:calc((100%-90px)/4);
   text-transform: uppercase;
 }
 .box-appeal {
-  width: 207px;
-  margin-left: 179px;
+  margin-left: 69px;
 }
-.footer .content{
+.footer .content {
   display: flex;
   align-items: baseline;
   padding-top: 48px;
@@ -329,9 +332,9 @@ width:calc((100%-90px)/4);
   font-size: 12px;
   line-height: 2;
   text-align: center;
-  white-space: nowrap;
+  /* white-space: nowrap;
   overflow: auto;
-  text-overflow: ellipsis;
+  text-overflow: ellipsis; */
 }
 
 /* portfolio */
@@ -354,9 +357,9 @@ width:calc((100%-90px)/4);
   padding-top: 93px;
   margin-bottom: 50px;
   max-width: 100%;
-  white-space: nowrap;
+  /* white-space: nowrap;
   overflow: auto;
-  text-overflow: ellipsis;
+  text-overflow: ellipsis; */
 }
 .list-button .item-button:not(:last-child) {
   margin-right: 8px;
@@ -397,12 +400,13 @@ width:calc((100%-90px)/4);
   margin-top: 20px;
   margin-left: 24px;
   margin-right: 24px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+ 
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  /* white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; */
 }
 .category {
   margin-top: 4px;
