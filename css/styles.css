@@ -120,13 +120,17 @@ h1, h2, h3, h4, h5, h6{
 сделать фон */
 
 .hero {
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
-.hero-title {
+.container-hero {
   width: 646px;
+}
+.hero-title {
   margin-bottom: 38px;
-  margin-left: auto;
-  margin-right: auto;
 
   font-weight: 900;
   font-size: 44px;
@@ -136,7 +140,7 @@ h1, h2, h3, h4, h5, h6{
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
-.button {
+.button { 
   display: inline-block;
   width: auto;
   border-radius: 4px;
@@ -175,6 +179,10 @@ h1, h2, h3, h4, h5, h6{
 /* секция наши преимущества */
 
 /* добавил фон для катринок svg/, удалить после урока */
+.advantages {
+  border-bottom: 1px solid #ECECEC;
+  overflow: auto;
+}
 .advantages .link {
   display: block;
   margin-bottom: 30px;
@@ -185,7 +193,6 @@ h1, h2, h3, h4, h5, h6{
 }
 .list-advantages {
 display: flex;
-border-bottom: 1px solid #ECECEC;
 }
 .list-advantages .item {
 width:calc((100% - 90px) / 4);
