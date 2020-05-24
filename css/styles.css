@@ -113,7 +113,7 @@ h1, h2, h3, h4, h5, h6{
 .mail:hover, .mail:focus,
 .phone:hover, .phone:focus {
   color: var(--accent-color);
-}
+ }
 /* main */
 /* Hero */
 /*   заменить цвет текста заголовков на белый
@@ -179,10 +179,7 @@ h1, h2, h3, h4, h5, h6{
 /* секция наши преимущества */
 
 /* добавил фон для катринок svg/, удалить после урока */
-.advantages {
-  border-bottom: 1px solid #ECECEC;
-  overflow: auto;
-}
+
 .advantages .link {
   display: block;
   margin-bottom: 30px;
@@ -193,6 +190,7 @@ h1, h2, h3, h4, h5, h6{
 }
 .list-advantages {
 display: flex;
+border-bottom: 1px solid #ECECEC;
 }
 .list-advantages .item {
 width:calc((100% - 90px) / 4);
@@ -219,7 +217,6 @@ width:calc((100% - 90px) / 4);
   .list-work .item:not(:last-child) {
     margin-right: 30px;
   }
-
   /* секция наша команда */
 .team {
   background-color: var(--team-bg-color);
