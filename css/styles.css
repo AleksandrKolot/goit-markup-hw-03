@@ -47,6 +47,7 @@ h1, h2, h3, h4, h5, h6{
   margin: 0px;
   padding: 0px;
 }
+/* утилита */
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -179,7 +180,9 @@ h1, h2, h3, h4, h5, h6{
 /* секция наши преимущества */
 
 /* добавил фон для катринок svg/, удалить после урока */
-
+.border {
+  border-bottom: 1px solid #ECECEC;
+}
 .advantages .link {
   display: block;
   margin-bottom: 30px;
@@ -190,7 +193,6 @@ h1, h2, h3, h4, h5, h6{
 }
 .list-advantages {
 display: flex;
-border-bottom: 1px solid #ECECEC;
 }
 .list-advantages .item {
 width:calc((100% - 90px) / 4);
@@ -221,7 +223,6 @@ width:calc((100% - 90px) / 4);
 .team {
   background-color: var(--team-bg-color);
 }
-
 .team-title{
   margin-bottom: 10px;
   font-weight: 500;
